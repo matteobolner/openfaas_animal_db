@@ -10,4 +10,9 @@ The function container is available at https://hub.docker.com/repository/docker/
 The source databases are obtained from ENA (https://www.ebi.ac.uk/ena) and available on an S3 bucket  
 
 Links:  https://animal-db-bucket.s3.amazonaws.com/9668_database.csv   
-        https://animal-db-bucket.s3.amazonaws.com/9823_database.csv
+        https://animal-db-bucket.s3.amazonaws.com/9823_database.csv  
+        
+        
+Possible improvements:   
+        -implement synchronization with AWS S3 so as to trigger the function whenever a new .csv is uploaded, and upload the stats to another bucket  
+        -obtain the database not from an S3 bucket but directly from ENA, in order to have an updated database with statistics whenever the function is invoked
