@@ -1,5 +1,3 @@
 # openfaas_animal_db
-Repository for the OpenFaas function that generates a nucleotide database containing all available reads for the chosen animal downloaded from ENA, and some statistics to better analyze it.
-
-At the moment i am not able to use the python requests module from inside the function, returning 502 bad gateway error
-
+Repository for the OpenFaas function that generates some useful statistics to analyze a database containing all ENA available nucleotide reads for a given organism, accessing it from a S3 object storage URL.
+The function automatically scales based on the number of invocations per second.
